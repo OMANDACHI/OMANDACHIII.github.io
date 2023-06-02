@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .gallery img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      margin: 5px;
+    }
+    .arrow-up-down {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      font-size: 30px;
+      color: #000;
+      cursor: pointer;
+      opacity: 0.7;
+      transition: opacity 0.3s ease-in-out;
+    }
+    
+    
+  </style>
+</head>
+<body>
+    <!--mebuat button acak berfungsi, sehingga ketika di klik
+    tombol button acak maka foto secara otomatis akan teracak-->
+    <script>
+        function shufflePhotos() {
+          var gallery = document.querySelector('.gallery');
+          for (var i = gallery.children.length; i >= 0; i--) {
+            gallery.appendChild(gallery.children[Math.random() * i | 0]);
+          }
+        }
+      </script>
+      
+      <button onclick="shufflePhotos()">Acak Foto</button>
+      
+      <!-- Konten halaman web -->
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+
+    <p>
+        <div class="gallery">
+            <img src="KBgembala.jpg" alt="Foto 1">
+            <img src="gbiJEMAAT.jpg" alt="Foto 2">
+            <img src="pemuda1.jpg" alt="Foto 3">
+            <img src="jemaat1.jpg" alt="Foto 4">
+            <img src="jemaat2.jpg" alt="Foto 5">
+            <img src="jemaat3.jpg" alt="Foto 6">
+            <!-- Tambahkan foto-foto lain di sini -->
+        </div>
+    </p>
+    <p>
+        <div class="gallery">
+            <img src="jemaat4.jpg" alt="Foto 6">
+            <img src="jemaat5.jpg" alt="Foto 7">
+            <img src="jemaat6.jpg" alt="Foto 8">
+            <img src="jemaat7.jpg" alt="Foto 9">
+            <img src="bpk_gembala.jpg" alt="Foto 10">
+            <img src="ibu_gembabla.jpg" alt="Foto 11">
+            <!--baris ke dua foto-->
+        </div>
+    </p>
+    <p>
+        <div class="gallery">
+            <img src="SM.jpg" alt="Foto 6">
+            <img src="jemaat5.jpg" alt="Foto 7">
+            <img src="jemaat6.jpg" alt="Foto 8">
+            <img src="jemaat7.jpg" alt="Foto 9">
+            <img src="bpk_gembala.jpg" alt="Foto 10">
+            <img src="ibu_gembabla.jpg" alt="Foto 11">
+            <!--baris ke tiga  foto-->
+        </div>
+    </p>
+    <p>
+        <div class="gallery">
+            <img src="lmb.jpg" alt="Foto 6">
+            <img src="ibadah.jpg" alt="Foto 7">
+            <img src="ibu2.jpg" alt="Foto 8">
+            <img src="nkh.jpg" alt="Foto 9">
+            <img src="merry.jpg" alt="Foto 10">
+            <img src="khotbah.jpg" alt="Foto 11">
+            <!--baris ke tiga  foto-->
+        </div>
+    </p>
+  
+  
+</body>
+</html>
